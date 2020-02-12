@@ -1,0 +1,2 @@
+cp custom.css ~/.jupyter/custom/custom.css
+ls ~/.jupyter/custom
