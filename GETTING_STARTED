@@ -1,0 +1,26 @@
+This folder contains a number of Linux tutorials.  All the tutorials use
+jupyter notebook.
+
+To run these tutorials we need to first install Jupyter bash kernel:
+
+    pip install bash_kernel --user
+    python -m bash_kernel.install --user
+    pip install jupyterthemes --user
+    jupyter kernelspec list
+
+
+Before you start the notebook perform a little CSS customisation by running:
+
+    ./setup
+
+This will copy custom.css to the Jupyter config directory.
+
+Then to start Jupyter notebook:
+
+    module load python/3.7
+    jupyter notebook &
+
+
+Just for the record, the tutorials were downloaded with:
+
+    git clone https://github.com/seddon-software/linux_intro.git
