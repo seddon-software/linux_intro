@@ -1,0 +1,7 @@
+trap 'echo ignoring signal' SIGTSTP SIGINT SIGTERM
+
+while true
+do
+    sleep 5
+    echo "....."
+done
