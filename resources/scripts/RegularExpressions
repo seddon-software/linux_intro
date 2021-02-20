@@ -1,0 +1,23 @@
+#! /bin/bash
+
+words="this costs 5.43 pounds"
+
+if [[ $words =~ [0-9]+\.[0-9]+ ]]
+then
+    echo "$words contains a number"
+else
+    echo "$words does not contains a number"
+fi
+
+
+######
+
+words="this costs a few pounds"
+
+if [[ $words =~ [0-9]+\.[0-9]+ ]]
+then
+    echo "$words contains a number"
+else
+    echo "$words does not contains a number"
+fi
+

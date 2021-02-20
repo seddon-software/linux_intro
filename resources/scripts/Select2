@@ -1,0 +1,9 @@
+#! /bin/bash
+
+
+select day in Mon Tue Wed Thu Fri Exit
+do
+    echo "$day $REPLY"
+    if [ "$day" = "Exit" ]; then break; fi
+done
+

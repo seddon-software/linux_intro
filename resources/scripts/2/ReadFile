@@ -1,0 +1,9 @@
+#! /bin/bash
+
+file="myfile.txt"
+
+while read line
+do
+	echo "$line"
+done < "$file"          # or   <<< "$var"    to iterate over a variable 
+

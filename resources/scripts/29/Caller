@@ -1,0 +1,22 @@
+#! /bin/bash
+
+sub1()
+{
+  sub2
+}
+
+sub2()
+{
+  sub3
+}
+
+sub3()
+{
+  caller 0
+  caller 1
+  caller 2
+}
+
+sub1
+
+

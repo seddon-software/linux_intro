@@ -1,0 +1,9 @@
+#! /bin/bash
+
+file="phones.txt"
+
+while read firstName lastName phoneNumber
+do
+	echo "$phoneNumber $firstName $lastName"
+done < "$file"
+

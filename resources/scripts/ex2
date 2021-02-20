@@ -1,0 +1,8 @@
+#! /bin/bash
+
+printf "Current directory is: "
+pwd
+
+printf "Today's date and time: "
+date
+

@@ -1,0 +1,17 @@
+#! /bin/bash
+### debecho (debug-echo), by Stefano Falsetto ###
+### Will echo passed parameters only if DEBUG is set to a value. ###
+debecho () {
+  if [ ! -z "$DEBUG" ]; then
+     echo "$1" >&2
+     #         ^^^ to stderr
+  fi
+}
+
+DEBUG=on
+Whatever=whatnot
+debecho $Whatever   # whatnot
+
+DEBUG=
+Whatever=notwhat
+debecho $Whatever   # (Will not echo.)
