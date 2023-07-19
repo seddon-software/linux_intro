@@ -1,28 +1,24 @@
-This folder contains a number of Linux tutorials.  All the tutorials use
-jupyter notebook.
+Download the Linux tutorials with:
+    git clone https://github.com/seddon-software/linux_intro.git
 
-Before anything else you need to setup your environment by typing the following on the command line:
+This will create a subfolder containing several Linux tutorials.  All the tutorials use Jupyter notebook.  cd into this folder:
+    cd linux_intro
 
-    module load python/3.7
-or
-    module load python/3.8
+Now you need to setup your environment by typing the following:
+    module load python
 
-Make sure you don't have any other versions of Python or gcc loaded - unload as necessary.  For example:
+Make sure you don't have any other versions of Python loaded - unload as necessary.  For example:
+    module unload python/3.7
 
-    module unload python/ana
-
-To run these tutorials we need to first install Jupyter bash kernel:
-
+To run these tutorials we need to first install the Jupyter bash kernel:
     pip install bash_kernel --user
     python -m bash_kernel.install --user
     pip install jupyterthemes --user
     
 To check which kernels have been installed:
-
     jupyter kernelspec list
 
 Before you start the notebook perform a little CSS customisation by running:
-
     cd resources
     ./setup
     cd ..
@@ -30,10 +26,7 @@ Before you start the notebook perform a little CSS customisation by running:
 This will copy custom.css to the Jupyter config directory.
 
 Then to start Jupyter notebook:
+    jupyter notebook &
 
-    jupyter notebook --browser firefox &
-
-Just for the record, the tutorials were downloaded with:
-
-    git clone https://github.com/seddon-software/linux_intro.git
+Your instructor will take it from there.
 
