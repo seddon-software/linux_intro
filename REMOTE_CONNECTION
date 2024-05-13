@@ -1,0 +1,3 @@
+# to get control characters to work you need to set <Grab the keyboard input=true> in the config file: ~/NoMachine/*.nxs
+# and then launch the client with the activegrab option as follows:
+sudo /usr/NX/bin/nxplayer --activegrab --session ~/NoMachine/Linux.nxs 
