@@ -1,8 +1,8 @@
-# Diamond wide default file, please do local modifiactions in ~/.bashrc_local
+# Diamond wide default file, please do local modifications in ~/.bashrc_local
 # $Id$
 # $URL$
 
 # source user defined stuff
 if [ -f ~/.bashrc_local ]; then
-	source ~/.bashrc_local
+	. ~/.bashrc_local
 fi
